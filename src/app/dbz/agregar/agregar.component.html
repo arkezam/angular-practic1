@@ -1,0 +1,15 @@
+<form (ngSubmit)="agregar( )" > 
+    <div class="ingresar">
+        
+        <label>
+            nombre</label>
+            <input type="text" name="nombre" [(ngModel)]="nuevo.nombre">
+        <br>
+        <label>
+            poder</label>
+            <input type="number" name="poder" [(ngModel)]="nuevo.poder">
+            <br>
+        <button type="submit" >agregar</button>
+    </div>
+ 
+</form>

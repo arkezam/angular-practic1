@@ -1,0 +1,37 @@
+<h1>Bienvenido a DBZ</h1>
+
+
+<div class="container">
+
+    <app-personajes [data]="Personajes"></app-personajes>
+    <!-- <div  class="listapersonajes">
+        
+        <h3>personajes:  </h3>
+        <li *ngFor="let personaje of Personajes">
+            {{personaje.nombre}} - {{personaje.poder}}
+        </li>
+ 
+        
+    </div> -->
+
+    <app-agregar 
+        [nuevo]="nuevo"
+        (agregarNuevo)="onagregarNuevo($event)"
+    ></app-agregar>
+    <!-- <form (ngSubmit)="agregar( )" > 
+    <div class="ingresar">
+        
+        <label>
+            nombre</label>
+            <input type="text" name="nombre" [(ngModel)]="nuevo.nombre">
+        <br>
+        <label>
+            poder</label>
+            <input type="number" name="poder" [(ngModel)]="nuevo.poder">
+            <br>
+        <button type="submit" >agregar</button>
+    </div>
+ 
+</form> -->
+    
+</div>

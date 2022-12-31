@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
+.listapersonajes, .ingresar{
+    margin-left: 10px;
+}
